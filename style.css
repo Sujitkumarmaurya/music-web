@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+section {
+  scroll-margin: 50px;
+}
+.gift_section {
+  scroll-margin: 100px;
+}
+
+/* navigation section */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-out;
+}
+
+/* hero section */
+
+.hero_section {
+  background-image: url(images/hero_image.png);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero_section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero_section h1 {
+  font-size: 96px;
+}
+.hero_section h3 {
+  font-size: 32px;
+}
+.hero_section .container p {
+  text-align: center;
+}
+
+/*  music section*/
+
+.music_section {
+  padding-top: 50px;
+  background-color: var(--purple500);
+}
+.music_section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  gap: 30px;
+}
+.music_section .container h2 span {
+  font-size: 40px;
+}
+.music_section .container h2 {
+  font-size: 40px;
+}
+.music_section .container h3 {
+  font-size: 25px;
+}
+.music_section .container h4 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.ipad_iphone-img {
+  position: relative;
+  top: 370px;
+  margin-top: -370px;
+}
+
+.primary_btn {
+  background-color: var(--red600);
+  color: white;
+}
+
+/*  about music container */
+
+.about_music {
+  padding-top: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.secondary_btn {
+  background-color: var(--purple300);
+  color: white;
+}
+
+/* video section */
+
+.video_section {
+  background-image: url(images/video.png);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.video_section .container {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  margin-top: -150px;
+}
+
+/*  gift card section */
+
+.gift_section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 60px 0;
+}
+.gift_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gift_content h3 {
+  font-size: 25px;
+}
+
+/* links section */
+.footer_upper {
+  background-color: var(--purple500);
+  padding: 20px;
+}
+
+.footer_upper .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+}
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer_links ul li {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer_lower {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--purple300);
+  color: white;
+}
+
+@media (max-width: 1220px) {
+  nav {
+    padding: 17px 20px;
+  }
+  .mac_img {
+    width: 90%;
+  }
+  .gift_section {
+    padding: 0 20px;
+  }
+  .music_section {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1090px) {
+  .gift_content {
+    padding: 0 20px;
+  }
+  .ipad_iphone-img img {
+    width: 95%;
+  }
+  .mac_img img {
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* nav ul {
+    gap: 8px;
+  }
+  nav ul li {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 22px;
+    font-weight: 500;
+  } */
+
+  .hero_section h1 {
+    font-size: 50px;
+  }
+  .hero_section h3 {
+    font-size: 30px;
+  }
+  .music_section {
+    padding-top: 30px;
+    background-color: var(--purple500);
+  }
+  .music_section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    gap: 10px;
+  }
+  .music_section .container h2 span {
+    font-size: 30px;
+  }
+  .music_section .container h2 {
+    font-size: 30px;
+  }
+  .music_section .container h3 {
+    font-size: 20px;
+  }
+  .music_section .container h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .primary_btn {
+    font-size: 10px;
+  }
+  .ipad_iphone-img {
+    position: relative;
+    top: 150px;
+    margin-top: -150px;
+  }
+}
+@media (max-width: 600px) {
+  .ipad_iphone-img {
+    position: relative;
+    top: 200px;
+    margin-top: -200px;
+  }
+  .about_music {
+    padding-top: 220px;
+  }
+  .gift_content p {
+    font-size: 12px;
+  }
+  .footer_lower {
+    font-size: 13px;
+  }
+  .footer_links h3 {
+    font-size: 15px;
+  }
+
+  .footer_links ul li {
+    font-size: 12px;
+  }
+  .hero_section p {
+    padding: 0 20px;
+  }
+  .about_music p {
+    padding: 0 20px;
+  }
+  .video_section p {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .gift_section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gift_card {
+    align-self: center;
+  }
+  .gift_card img {
+    width: 90%;
+  }
+}
+@media (max-width: 340px) {
+  .footer_upper .container {
+    flex-direction: column;
+  }
+}
